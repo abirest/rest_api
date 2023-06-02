@@ -9,7 +9,7 @@ const app = express();
 connectDB();
 //middleware
 app.use(express.json());
-app.use("api/user",userRouter)
+app.use("/api/user",userRouter)
 
 const PORT = process.env.PORT || 8020
 

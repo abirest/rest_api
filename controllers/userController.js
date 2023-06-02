@@ -1,7 +1,7 @@
 const User = require("../model/User");
 
 //Adding New User0
-exports.postUser = async(req,res)=>{
+    exports.postUser = async(req,res)=>{
     try{
     //Get name and email from req.body
     const {name,email} = req.body;
@@ -21,7 +21,7 @@ exports.postUser = async(req,res)=>{
         console.log(error)
         res.status(500).send({msg:"Sorry We Can Not Adding User"})
     }
-
+    }
     //Find Users from model User
     exports.getUser = async(req,res)=>{
         try {
@@ -69,4 +69,3 @@ exports.postUser = async(req,res)=>{
         }
     }
     
-}
